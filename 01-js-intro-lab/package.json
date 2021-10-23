@@ -1,0 +1,10 @@
+{
+  "name": "01-js-intro-lab",
+  "version": "1.0.0",
+  "description": "JS intro demo",
+  "main": "index.js",
+  "repository": "https://github.com/iproduct/fullstack-react-academy.git",
+  "author": "Trayan Iliev",
+  "license": "Apache 2.0",
+  "private": false
+}
