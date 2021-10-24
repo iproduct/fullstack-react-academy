@@ -1,6 +1,7 @@
 function PositionLogger(aPos) {
-  var _position = aPos, positionsLog = [{ val: aPos }];
-  // this.position = aPos;
+  var _position = aPos;
+  var _positionsLog = [{ val: aPos }];
+  this.initialPposition = aPos;
   Object.defineProperty(this, 'position', {
     get: function () {
       // console.log('get position called');
@@ -8,12 +9,12 @@ function PositionLogger(aPos) {
     },
     set: function (val) {
       _position = val;
-      positionsLog.push({ val: _position });
+      _positionsLog.push({ val: _position });
     },
     enumerable: true
   });
 
-  this.getLog = function () { return positionsLog; };
+  this.getLog = function () { return _positionsLog; };
 }
 
 var pl1 = new PositionLogger(5);

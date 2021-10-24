@@ -10,6 +10,7 @@ function func1(a1, a2) {
     
     // let args = Array.prototype.slice.call(arguments, 0);
     console.log(a1, a2)
+    // console.log(args)
     let args2 = Array.from(arguments);
     args2.forEach(a => console.log(a))
   }
