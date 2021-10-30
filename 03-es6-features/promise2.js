@@ -1,7 +1,7 @@
 function msgAfterTimeout (who, timeout) {
     return new Promise((resolve, reject) => {
         setTimeout(
-            () => (Math.random() >= 0) ? 
+            () => (Math.random() >= 1) ? 
                 resolve(`Hello ${who}!`)
                 : reject('Error getting message.'),
             timeout)
@@ -32,4 +32,4 @@ const result = msgAfterTimeout("Foo", 2000)
             console.log('Demo finished.');
     });
 
-// console.log(result);
+console.log(result);
