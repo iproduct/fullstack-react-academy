@@ -1,0 +1,16 @@
+{
+  "name": "04-ts-intro-lab",
+  "version": "1.0.0",
+  "description": "TS Demo",
+  "main": "index.js",
+  "repository": "https://github.com/iproduct/fullstack-react-academy",
+  "author": "Trayan Iliev",
+  "license": "Apache 2.0",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "typescript": "^4.4.4"
+  }
+}
