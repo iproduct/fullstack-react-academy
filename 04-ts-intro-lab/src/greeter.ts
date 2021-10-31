@@ -1,5 +1,9 @@
-function greeter(user: string): string {
-    return `Hi ${user} from Users Demo!`;
+
+import {User, Author, Reader, Admin} from './user.js';
+
+function greeter(user: User): string {
+    return `Hi ${user.getSalutation()}`;
 }
 
-document.getElementById('results')!.innerHTML = greeter('Trayan');
+const tarayn = new Admin('Trayan', 'Iliev', 'tiliev@gamil.com', 'tiliev');
+document.getElementById('results')!.innerHTML = greeter(tarayn);
