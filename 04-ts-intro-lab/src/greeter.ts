@@ -1,5 +1,5 @@
 
-import { MockUserRepository } from './user-repository.js';
+import { MockUserRepository, UserRepository } from './user-repository.js';
 import {User, Author, Reader, Admin, Role} from './user.js';
 
 function greeter(users: User[]): string {
@@ -17,11 +17,12 @@ const georgi = new Author('Georgi', 'Petrov', 'gpetrov@gamil.com', 'georgi', [Ro
     country: 'Bulgaria', address: 'Sofia 1000', phone: '+359 881233456'
 });
 
-const maria = new Admin('Maria', 'Petrova', 'mariap@gamil.com', 'maria');
+const maria = new Reader('Maria', 'Petrova', 'mariap@gamil.com', 'maria');
 
-const userRepo = new MockUserRepository();
-userRepo.create(tarayn)
-userRepo.create(georgi)
-userRepo.create(maria)
+const userRepo: UserRepository  = new MockUserRepository();
+userRepo.create(tarayn);
+userRepo.create(georgi);
+userRepo.create(maria);
 
 document.getElementById('results')!.innerHTML = greeter(userRepo.findAll());
+// (document.getElementById('results') as HTMLElement).innerHTML = greeter(userRepo.findAll());

@@ -36,8 +36,7 @@ export class UserImpl implements User {
         public contact?: Contact,
     ) { }
     get salutation() {
-        return `${this.firstName} ${this.lastName} in roles: ${this.roles.map(role => Role[role]).join(', ')
-            }`;
+        return `${this.firstName} ${this.lastName} in roles: ${this.roles.map(role => Role[role]).join(', ')}`;
     }
     getSalutation(): string {
         return `${this.id ? this.id : ''}: ${this.salutation} with credentials [username: ${this.email}, password: ${this.password}]`;

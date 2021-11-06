@@ -1,7 +1,17 @@
 import {User, Author, Reader, Admin, Role} from './user.js';
 
+export interface AllUserType {
+    (): User[];
+}
+
+export interface UserMap {
+    [key: string]: User
+}
+
+type AllUserTypeAlias =  () => User[];
+
 export interface UserRepository {
-    findAll(): User[];
+    findAll: AllUserTypeAlias;
     findById(id: number): User | undefined;
     create(user: User): User;
     update(user: User): User;
