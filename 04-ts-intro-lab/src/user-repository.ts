@@ -13,6 +13,7 @@ type AllUserTypeAlias =  () => User[];
 export interface UserRepository {
     findAll: AllUserTypeAlias;
     findById(id: number): User | undefined;
+    findByEmail(email: string): User | undefined;
     create(user: User): User;
     update(user: User): User;
     deleteById(id: number): User | undefined;
@@ -27,6 +28,9 @@ export class MockUserRepository implements UserRepository {
     }
     findById(id: number): User | undefined {
         return this.entities.get(id);
+    }
+    findByEmail(email: string): User | undefined {
+        return Array.from(this.entities.values()).find(u => u.email === email)
     }
     create(user: User): User {
         user.id = ++ MockUserRepository.idSequence;
