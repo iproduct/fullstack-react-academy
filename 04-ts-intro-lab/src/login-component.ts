@@ -6,7 +6,7 @@ export class LoginComponent {
     constructor(private jqElementSelector: string, private loginController: LoginController) {
 
         const keyboardEventHandler = (event: JQuery.KeyPressEvent) => {
-            console.log(event.code)
+            // console.log(event.code)
             if (event.code === "Enter") {
                 loginEventHandler();
             }

@@ -1,5 +1,6 @@
+const iter = Symbol.iterator
 let fibonacci = {
-  [Symbol.iterator]() {
+  [iter]() {
     let pre = 0, cur = 1;
     return {
       next() {

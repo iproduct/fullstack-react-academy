@@ -26,6 +26,6 @@ class Fibonacci {
   }
 }
 
-for (let n of new Fibonacci(10) ) {
+for (let n of new Fibonacci(20) ) {
   console.log(n);
 }

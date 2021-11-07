@@ -25,6 +25,7 @@ const userRepo: UserRepository  = new MockUserRepository();
 userRepo.create(tarayn);
 userRepo.create(georgi);
 userRepo.create(maria);
+console.log(maria instanceof Admin)
 
 const controller: LoginController = new DemoLoginController(userRepo);
 
