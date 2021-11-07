@@ -26,7 +26,7 @@ userRepo.create(georgi);
 userRepo.create(maria);
 
 const controller: LoginController = new DemoLoginController(userRepo)
-controller.login("tiliev@gamil.com", "tiliev2")
+controller.login("tiliev@gamil.com", "tiliev")
 .then(loggedInUser => {
     document.getElementById('results')!.innerHTML = `You successfully logged in as: ${loggedInUser.getSalutation()}`;
     console.log(controller.getCurrentUser())

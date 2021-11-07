@@ -1,5 +1,5 @@
 {
-  "port": 3100,
+  "port": 3200,
   "injectChanges": false,
   "files": [
     "./**/*.{html,htm,css,js}"

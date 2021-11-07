@@ -10,7 +10,11 @@
     "start": "lite-server"
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.8",
     "lite-server": "^2.6.1",
     "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
   }
 }
