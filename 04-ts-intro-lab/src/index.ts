@@ -1,3 +1,4 @@
+import { LoginComponent } from './login-component.js';
 import { LoginController, DemoLoginController } from './controller.js';
 
 import { MockUserRepository, UserRepository } from './user-repository.js';
@@ -8,7 +9,7 @@ function greeter(users: User[]): string {
    .join('<br>');
 }
 
-const tarayn = new Admin('Trayan', 'Iliev', 'tiliev@gamil.com', 'tiliev', [Role.AUTHOR, Role.ADMIN],
+const tarayn = new Admin('Trayan', 'Iliev', 'tiliev@gmail.com', 'tiliev', [Role.AUTHOR, Role.ADMIN],
 {
     country: 'Bulgaria', address: 'Sofia 1000', phone: '+359 885123456'
 });
@@ -25,12 +26,15 @@ userRepo.create(tarayn);
 userRepo.create(georgi);
 userRepo.create(maria);
 
-const controller: LoginController = new DemoLoginController(userRepo)
-controller.login("tiliev@gamil.com", "tiliev")
-.then(loggedInUser => {
-    document.getElementById('results')!.innerHTML = `You successfully logged in as: ${loggedInUser.getSalutation()}`;
-    console.log(controller.getCurrentUser())
-})
-.catch(err => document.getElementById('results')!.innerHTML = 'Invalid email or password.')
-document.getElementById('results')!.innerHTML = greeter(userRepo.findAll());
+const controller: LoginController = new DemoLoginController(userRepo);
+
+const loginComponent = new LoginComponent('#results', controller);
+
+// controller.login("tiliev@gamil.com", "tiliev")
+// .then(loggedInUser => {
+//     document.getElementById('results')!.innerHTML = `You successfully logged in as: ${loggedInUser.getSalutation()}`;
+//     console.log(controller.getCurrentUser())
+// })
+// .catch(err => document.getElementById('results')!.innerHTML = 'Invalid email or password.')
+// document.getElementById('results')!.innerHTML = greeter(userRepo.findAll());
 // (document.getElementById('results') as HTMLElement).innerHTML = greeter(userRepo.findAll());
