@@ -23,7 +23,9 @@ export interface UserRepository2 extends Repository<IdType, User> {
 
 export class MockRepository<K, V extends Indentifiable<K>> implements Repository<K, V> {
     private entities = new Map<K, V>()
-    constructor(private sequence: IdGenerator<K>, sampleValues?: V[]) {
+    private sequence: Iterator<K>
+    constructor(idGen: IdGenerator<K>, sampleValues?: V[]) {
+        this.sequence = idGen[Symbol.iterator]()
         if (sampleValues) {
             sampleValues.forEach(val => this.create(val))
         }
@@ -35,7 +37,7 @@ export class MockRepository<K, V extends Indentifiable<K>> implements Repository
         return this.entities.get(id);
     }
     create(item: V): V {
-        item.id = this.sequence[Symbol.iterator]().next().value;
+        item.id = this.sequence.next().value;
         this.entities.set(item.id, item);
         return item;
     }
