@@ -1,11 +1,11 @@
-import { IdGenerator } from './id-generator';
-import { UserRepository } from './user-repository';
+import { IdGenerator } from './id-generator.js';
+import { UserRepository } from './user-repository.js';
 import { User, Author, Reader, Admin, Role } from './user.js';
 
-type IdType = number
+export type IdType = number
 
 export interface Indentifiable<K> {
-    id: K
+    id: K | undefined
 }
 
 export interface Repository<K, V> {
@@ -21,7 +21,7 @@ export interface UserRepository2 extends Repository<IdType, User> {
     findByEmail(email: string): User | undefined;
 }
 
-export class MockRepository<K, V extends Indentifiable<K>> implements Repository<K, V> {
+export class InMemoryRepository<K, V extends Indentifiable<K>> implements Repository<K, V> {
     private entities = new Map<K, V>()
     private sequence: Iterator<K>
     constructor(idGen: IdGenerator<K>, sampleValues?: V[]) {
@@ -38,7 +38,7 @@ export class MockRepository<K, V extends Indentifiable<K>> implements Repository
     }
     create(item: V): V {
         item.id = this.sequence.next().value;
-        this.entities.set(item.id, item);
+        this.entities.set(item.id!, item);
         return item;
     }
     update(item: V): V {
@@ -57,6 +57,13 @@ export class MockRepository<K, V extends Indentifiable<K>> implements Repository
     }
     count(): number {
         return this.entities.size;
+    }
+
+}
+
+export class InMemoryUserRepository extends InMemoryRepository<IdType, User> implements UserRepository2 {
+    findByEmail(email: string): User | undefined {
+        return this.findAll().find(u => u.email === email);
     }
 
 }

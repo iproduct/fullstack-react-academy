@@ -1,13 +1,14 @@
+import { Indentifiable, IdType } from './repository.js';
 
 export interface Person {
-    id: number | undefined;
+    id: IdType | undefined;
     firstName: string;
     lastName: string;
     readonly salutation: string;
     getSalutation(): string;
 }
 
-export interface User extends Person {
+export interface User extends Person, Indentifiable<IdType> {
     email: string;
     password: string;
     roles: Role[];     // Array<Role>;

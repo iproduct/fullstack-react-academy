@@ -1,8 +1,10 @@
+import { InMemoryUserRepository, UserRepository2 } from './repository.js';
 import { LoginComponent } from './login-component.js';
 import { LoginController, DemoLoginController } from './controller.js';
 
-import { MockUserRepository, UserRepository } from './user-repository.js';
+// import { MockUserRepository, UserRepository } from './user-repository.js';
 import {User, Author, Reader, Admin, Role} from './user.js';
+import { NumberIdGenerator } from './id-generator.js';
 
 function greeter(users: User[]): string {
    return users.map(user => `Hi ${user.getSalutation()}${user.contact? ', address: ' + JSON.stringify(user.contact): ''}`)
@@ -21,11 +23,11 @@ const georgi = new Author('Georgi', 'Petrov', 'gpetrov@gamil.com', 'georgi', [Ro
 
 const maria = new Reader('Maria', 'Petrova', 'mariap@gamil.com', 'maria');
 
-const userRepo: UserRepository  = new MockUserRepository();
+const userRepo: UserRepository2  = new InMemoryUserRepository(new NumberIdGenerator());
 userRepo.create(tarayn);
 userRepo.create(georgi);
 userRepo.create(maria);
-console.log(maria instanceof Admin)
+console.log(userRepo.findAll())
 
 const controller: LoginController = new DemoLoginController(userRepo);
 
