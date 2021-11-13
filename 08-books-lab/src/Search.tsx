@@ -2,7 +2,7 @@
 import React, { ChangeEvent, Component, FormEvent } from 'react'
 import PropTypes from 'prop-types'
 
-type SearchCallback = (keywords: string) => void
+type SearchCallback = (keywords: string) => any
 
 interface SearchProps {
     onsearch: SearchCallback
