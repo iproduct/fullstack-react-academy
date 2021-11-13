@@ -30,11 +30,15 @@ export default class App extends React.Component<{}, AppState> {
     this.setState({books: root.items})
   }
 
+  addRemoveFavourite = (add: boolean) => {
+    
+  }
+
   render() {
   return (
     <div className="App">
       <Search onsearch={this.fetchBooks} />
-      <Books books={this.state.books} />
+      <Books books={this.state.books} onFavourite={this.addRemoveFavourite} />
     </div>
   );
   }

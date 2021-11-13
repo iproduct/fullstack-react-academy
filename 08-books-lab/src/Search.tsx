@@ -14,7 +14,7 @@ interface SearchState {
 
 export default class Search extends Component<SearchProps, SearchState> {
     static propTypes = {
-        onsearch: PropTypes.func
+        onsearch: PropTypes.func.isRequired
     }
     state: SearchState = {
         keywords: ''
@@ -23,15 +23,16 @@ export default class Search extends Component<SearchProps, SearchState> {
     constructor(props: SearchProps) {
         super(props);
         this.submitKeywords = this.submitKeywords.bind(this)
-        this.keywordsChanged = this.keywordsChanged.bind(this)
+        // this.keywordsChanged = this.keywordsChanged.bind(this)
     }
 
     submitKeywords(event: FormEvent) {
         event.preventDefault()
+        this.setState({ keywords: '' });
         this.props.onsearch(this.state.keywords)
     }
 
-    keywordsChanged(event: ChangeEvent) {
+    keywordsChanged = (event: ChangeEvent) => {
         const val = (event.target as HTMLInputElement).value;
         this.setState({ keywords: val })
     }
