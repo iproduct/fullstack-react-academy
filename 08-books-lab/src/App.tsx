@@ -71,15 +71,17 @@ export default class App extends React.Component<{}, AppState> {
           <div className="section">
             <div className="App">
               <Search onsearch={this.fetchBooks} />
-              <Books books={this.state.books} onFavourite={this.addRemoveFavourite}>
-                <div>I'm a child in tag body</div>
-                String directly in the tag body
-                <p>I'm a second child in tag body</p>
-                <div>I'm a third child in tag body</div>
-                Second string directly in the tag body
-              </Books>
-              <div>{this.state.counter}</div>
-              <button type="button" onClick={this.plusOne}>+1</button>
+              <div className="row">
+                  <Books books={this.state.books} onFavourite={this.addRemoveFavourite}>
+                    <div>I'm a child in tag body</div>
+                    String directly in the tag body
+                    <p>I'm a second child in tag body</p>
+                    <div>I'm a third child in tag body</div>
+                    Second string directly in the tag body
+                  </Books>
+                  <div>{this.state.counter}</div>
+                  <button className="btn waves-effect waves-light" type="button" onClick={this.plusOne}>+1</button>
+              </div>
             </div>
 
             <div className="row">
@@ -88,7 +90,7 @@ export default class App extends React.Component<{}, AppState> {
                   <h2 className="center light-blue-text"><i className="material-icons">flash_on</i></h2>
                   <h5 className="center">Speeds up development</h5>
 
-                  <p className="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+                  <p className="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components.Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
                 </div>
               </div>
 
@@ -97,7 +99,7 @@ export default class App extends React.Component<{}, AppState> {
                   <h2 className="center light-blue-text"><i className="material-icons">group</i></h2>
                   <h5 className="center">User Experience Focused</h5>
 
-                  <p className="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+                  <p className="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users.Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
                 </div>
               </div>
 
@@ -106,7 +108,7 @@ export default class App extends React.Component<{}, AppState> {
                   <h2 className="center light-blue-text"><i className="material-icons">settings</i></h2>
                   <h5 className="center">Easy to work with</h5>
 
-                  <p className="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+                  <p className="light">We have provided detailed documentation as well as specific code examples to help new users get started.We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
                 </div>
               </div>
             </div>

@@ -28,8 +28,10 @@ export default class Search extends Component<SearchProps, SearchState> {
 
     submitKeywords(event: FormEvent) {
         event.preventDefault()
-        this.setState({ keywords: '' });
-        this.props.onsearch(this.state.keywords)
+        if (this.state.keywords.trim().length > 0) {
+            this.setState({ keywords: '' });
+            this.props.onsearch(this.state.keywords)
+        }
     }
 
     keywordsChanged = (event: ChangeEvent) => {
@@ -42,7 +44,9 @@ export default class Search extends Component<SearchProps, SearchState> {
             <form onSubmit={this.submitKeywords}>
                 <input placeholder="Enter search keywords here ..." type="text" onChange={this.keywordsChanged}
                     value={this.state.keywords} />
-                <input value="Search" type="submit" />
+                <button className="btn waves-effect waves-light" type="submit">Submit
+                    <i className="material-icons right">send</i>
+                </button>
             </form>
         )
     }

@@ -12,9 +12,7 @@ export interface BooksProps {
 const Books: React.FC<BooksProps> = ({ books, children, ...rest }) => {
     return (
         <React.Fragment>
-            <ul>
                 {books.map(book => (<BookItem key={book.id} book={book} {...rest} />))}
-            </ul>
             {/* <ul> */}
                 {/* {React.Children.toArray(children).filter(child => (child as HTMLElement).tagName === 'div') */}
                 {/* {React.Children.map(children, ch => (<li>{ch}</li>))} */}
