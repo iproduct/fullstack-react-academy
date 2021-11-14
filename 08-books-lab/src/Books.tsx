@@ -6,16 +6,23 @@ import BookItem from './BookItem'
 export interface BooksProps {
     books: Item[];
     onFavourite(add: boolean): any;
-    children?: JSX.Element;
+    // children?: ReactNode;
 }
 
-const Books: React.FC<BooksProps> = ({ books, children, ...rest }: BooksProps) => {
+const Books: React.FC<BooksProps> = ({ books, children, ...rest }) => {
     return (
         <React.Fragment>
             <ul>
                 {books.map(book => (<BookItem key={book.id} book={book} {...rest} />))}
             </ul>
-            {children}
+            {/* <ul> */}
+                {/* {React.Children.toArray(children).filter(child => (child as HTMLElement).tagName === 'div') */}
+                {/* {React.Children.map(children, ch => (<li>{ch}</li>))} */}
+                {/* {React.Children.toArray(children)
+                    .filter(child => !(typeof child === "string") && (child as JSX.Element).type === 'div')
+                    .map((child, index) => (<li key={index}>{index}: {child}: {(child as JSX.Element).type}</li>))
+                } */}
+            {/* </ul> */}
         </React.Fragment>
     )
 }
