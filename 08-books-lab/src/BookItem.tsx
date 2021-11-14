@@ -16,7 +16,7 @@ const BookItem: React.FC<BookItemProps> = ({ book, inFavs, onAddFavourite, onRem
         onAddFavourite(book);
     }
     const removeFav = () => {
-        onAddFavourite(book);
+        onRemoveFavourite(book);
     }
     return (
         <div className="BookItem-card card col s12 m4">

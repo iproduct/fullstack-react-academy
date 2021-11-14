@@ -55,10 +55,6 @@ export default class App extends React.Component<{}, AppState> {
   }
 
 
-  plusOne = () => {
-    this.setState(state => ({ counter: state.counter + 1 }))
-  }
-
   render() {
     return (
       <React.Fragment>
@@ -71,6 +67,7 @@ export default class App extends React.Component<{}, AppState> {
             <ul id="nav-mobile" className="sidenav">
               <li><a href="#">Navbar Link</a></li>
             </ul>
+            // eslint-disable-next-line jsx-a11y/anchor-is-valid
             <a href="#" data-target="nav-mobile" className="sidenav-trigger"><i className="material-icons">menu</i></a>
           </div>
         </nav>
@@ -100,8 +97,6 @@ export default class App extends React.Component<{}, AppState> {
                   <div>I'm a third child in tag body</div>
                   Second string directly in the tag body
                 </Books>
-                <div>{this.state.counter}</div>
-                <button className="btn waves-effect waves-light" type="button" onClick={this.plusOne}>+1</button>
               </div>
             </div>
 
