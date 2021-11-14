@@ -5,10 +5,19 @@ import './BookItem.css'
 
 interface BookItemProps {
     book: Item;
-    onFavourite(add: boolean): any;
+    inFavs: boolean;
+    onAddFavourite(item: Item): void;
+    onRemoveFavourite(item: Item): void;
+
 }
 
-const BookItem: React.FC<BookItemProps> = ({ book, onFavourite }) => {
+const BookItem: React.FC<BookItemProps> = ({ book, inFavs, onAddFavourite, onRemoveFavourite }) => {
+    const addFav = () => {
+        onAddFavourite(book);
+    }
+    const removeFav = () => {
+        onAddFavourite(book);
+    }
     return (
         <div className="BookItem-card card col s12 m4">
            
@@ -20,8 +29,11 @@ const BookItem: React.FC<BookItemProps> = ({ book, onFavourite }) => {
                     <h3>{book.volumeInfo.title}</h3>
                     <h4>{book.volumeInfo.subtitle}</h4>
                     
-                </span>
-                <p><a href="#">This is a link</a></p>
+                </span>{
+                    inFavs ? (<button className="btn waves-effect waves-light" type="button" onClick={removeFav}>Remove from Favs</button>)
+                    : (<button className="btn waves-effect waves-light"  type="button" onClick={addFav}>Add to Favs</button>)
+                }
+            
             </div>
             <div className="card-reveal">
                 <span className="card-title grey-text text-darken-4">Card Title<i className="material-icons right">close</i></span>
@@ -33,11 +45,12 @@ const BookItem: React.FC<BookItemProps> = ({ book, onFavourite }) => {
 
     )
 }
-{/* <li>{book.volumeInfo.title} : {book.volumeInfo.subtitle} - {book.volumeInfo.authors.join(', ')}</li> */ }
 
 BookItem.propTypes = {
     book: PropTypes.any.isRequired,
-    onFavourite: PropTypes.func.isRequired
+    inFavs: PropTypes.any,
+    onAddFavourite: PropTypes.func.isRequired,
+    onRemoveFavourite: PropTypes.func.isRequired
 }
 
 export default BookItem

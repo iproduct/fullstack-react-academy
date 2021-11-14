@@ -5,14 +5,17 @@ import BookItem from './BookItem'
 
 export interface BooksProps {
     books: Item[];
-    onFavourite(add: boolean): any;
+    favs: Item[];
+    onAddFavourite(item: Item): void;
+    onRemoveFavourite(item: Item): void;
     // children?: ReactNode;
 }
 
-const Books: React.FC<BooksProps> = ({ books, children, ...rest }) => {
+const Books: React.FC<BooksProps> = ({ books, favs, children, ...rest }) => {
     return (
         <React.Fragment>
-                {books.map(book => (<BookItem key={book.id} book={book} {...rest} />))}
+                {books.map(book => (<BookItem key={book.id} book={book} {...rest} 
+                inFavs={!!favs.find(b => b.id === book.id)} />))}
             {/* <ul> */}
                 {/* {React.Children.toArray(children).filter(child => (child as HTMLElement).tagName === 'div') */}
                 {/* {React.Children.map(children, ch => (<li>{ch}</li>))} */}
@@ -27,7 +30,9 @@ const Books: React.FC<BooksProps> = ({ books, children, ...rest }) => {
 
 Books.propTypes = {
     books: PropTypes.array.isRequired,
-    onFavourite: PropTypes.func.isRequired
+    favs: PropTypes.array.isRequired,
+    onAddFavourite: PropTypes.func.isRequired,
+    onRemoveFavourite: PropTypes.func.isRequired
 }
 
 export default Books

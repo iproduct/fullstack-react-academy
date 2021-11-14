@@ -3,16 +3,20 @@ import Books from './Books';
 import React from 'react';
 import { Item, RootObject } from './book-models';
 import Search from './Search';
+import { InMemoryItemRepository, ItemRepository } from './repository';
+import { findAllByDisplayValue } from '@testing-library/dom';
 
 const BASE_URL = 'https://www.googleapis.com/books/v1/volumes?q='
 export interface AppState {
-  books: Item[],
-  counter: number
+  books: Item[];
+  favs: Item[];
+  counter: number;
 }
 
 export default class App extends React.Component<{}, AppState> {
   state: AppState = {
     books: [],
+    favs: [],
     counter: 0
   }
   constructor(props: {}) {
@@ -20,9 +24,9 @@ export default class App extends React.Component<{}, AppState> {
     this.fetchBooks = this.fetchBooks.bind(this)
   }
 
-  // componentDidMount() {
-  //   this.fetchBooks('react')
-  // }
+  componentDidMount() {
+    this.fetchBooks('react')
+  }
 
   async fetchBooks(keywords: string) {
     const resp = await fetch(BASE_URL + keywords)
@@ -30,9 +34,26 @@ export default class App extends React.Component<{}, AppState> {
     this.setState({ books: root.items })
   }
 
-  addRemoveFavourite = (add: boolean) => {
-
+  saveItemsToLS = () => {
+    localStorage.setItem("items", JSON.stringify(this.state.favs));
   }
+
+  getItemsFromLS = () => {
+    const itemStr = localStorage.getItem("items");
+    const items = itemStr ? JSON.parse(itemStr) : [];
+    this.setState({ favs: items })
+  }
+
+  addToFavourite = (item: Item) => {
+    this.setState(state => ({ favs: [...this.state.favs, item] }));
+    this.saveItemsToLS();
+  }
+
+  removeFromFavourite = (item: Item) => {
+    this.setState(state => ({ favs: this.state.favs.filter(it => it.id !== item.id) }));
+    this.saveItemsToLS();
+  }
+
 
   plusOne = () => {
     this.setState(state => ({ counter: state.counter + 1 }))
@@ -66,21 +87,21 @@ export default class App extends React.Component<{}, AppState> {
           </div>
         </div>
 
-
         <div className="container">
           <div className="section">
             <div className="App">
               <Search onsearch={this.fetchBooks} />
               <div className="row">
-                  <Books books={this.state.books} onFavourite={this.addRemoveFavourite}>
-                    <div>I'm a child in tag body</div>
-                    String directly in the tag body
-                    <p>I'm a second child in tag body</p>
-                    <div>I'm a third child in tag body</div>
-                    Second string directly in the tag body
-                  </Books>
-                  <div>{this.state.counter}</div>
-                  <button className="btn waves-effect waves-light" type="button" onClick={this.plusOne}>+1</button>
+                <Books books={this.state.books} onAddFavourite={this.addToFavourite}
+                  favs={this.state.favs} onRemoveFavourite={this.removeFromFavourite} >
+                  <div>I'm a child in tag body</div>
+                  String directly in the tag body
+                  <p>I'm a second child in tag body</p>
+                  <div>I'm a third child in tag body</div>
+                  Second string directly in the tag body
+                </Books>
+                <div>{this.state.counter}</div>
+                <button className="btn waves-effect waves-light" type="button" onClick={this.plusOne}>+1</button>
               </div>
             </div>
 

@@ -12,6 +12,8 @@ export interface Repository<K, V> {
     findAll(): V[];
     findById(id: K): V | undefined;
     create(item: V): V;
+    addAll(item: V[]): void;
+    clear():void;
     update(item: V): V;
     deleteById(id: K): V | undefined;
     count(): number;
@@ -32,7 +34,7 @@ export class InMemoryRepository<K, V extends Indentifiable<K>> implements Reposi
             sampleValues.forEach(val => this.create(val))
         }
     }
-    findAll(): V[] {
+     findAll(): V[] {
         return Array.from(this.entities.values());
     }
     findById(id: K): V | undefined {
@@ -45,6 +47,13 @@ export class InMemoryRepository<K, V extends Indentifiable<K>> implements Reposi
         this.entities.set(item.id!, item);
         return item;
     }
+    addAll(item: V[]): void {
+        item.forEach(this.create, this)
+    }
+    clear(): void {
+        this.entities.clear();
+    }
+
     update(item: V): V {
         if (!item.id) {
             throw new Error(`Item ID should be defined.`);
