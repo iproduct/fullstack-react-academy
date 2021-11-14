@@ -5,19 +5,20 @@ import { Item, RootObject } from './book-models';
 import Search from './Search';
 import { InMemoryItemRepository, ItemRepository } from './repository';
 import { findAllByDisplayValue } from '@testing-library/dom';
+import M from "materialize-css"
 
 const BASE_URL = 'https://www.googleapis.com/books/v1/volumes?q='
 export interface AppState {
   books: Item[];
   favs: Item[];
-  counter: number;
+  showFavs: boolean;
 }
 
 export default class App extends React.Component<{}, AppState> {
   state: AppState = {
     books: [],
     favs: [],
-    counter: 0
+    showFavs: false
   }
   constructor(props: {}) {
     super(props);
@@ -26,6 +27,10 @@ export default class App extends React.Component<{}, AppState> {
 
   componentDidMount() {
     this.fetchBooks('react')
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
   }
 
   async fetchBooks(keywords: string) {
@@ -54,6 +59,13 @@ export default class App extends React.Component<{}, AppState> {
     this.saveItemsToLS();
   }
 
+  showBooks = () => {
+    this.setState({ showFavs: false })
+  }
+  showFavourites = () => {
+    this.setState({ showFavs: true })
+  }
+
 
   render() {
     return (
@@ -61,23 +73,42 @@ export default class App extends React.Component<{}, AppState> {
         <nav className="light-blue lighten-1" role="navigation">
           <div className="nav-wrapper container"><a id="logo-container" href="#" className="brand-logo">Logo</a>
             <ul className="right hide-on-med-and-down">
-              <li><a href="#">Navbar Link</a></li>
+              <li><a href="#name" onClick={this.showBooks}>Books</a></li>
+              <li><a href="#name" onClick={this.showFavourites}>Favourites</a></li>
             </ul>
 
+
             <ul id="nav-mobile" className="sidenav">
-              <li><a href="#">Navbar Link</a></li>
+              <li><div className="user-view">
+                <div className="background">
+                  <img src="images/office.jpg" alt="menu-image" />
+                </div>
+                <a href="#name" onClick={this.showFavourites}><span className="white-text name">Author: Trayan Iliev</span></a>
+              </div>
+              </li>
+              <li><a href="#name" onClick={this.showBooks}><i className="material-icons">book</i>Books</a></li>
+              <li><a href="#!" onClick={this.showFavourites}><i className="material-icons">cloud</i>Favourites</a></li>
+
+              <li><a href="#!">Second Link</a></li>
+              <li><div className="divider"></div></li>
+              <li><a className="subheader">Subheader</a></li>
+              <li><a className="waves-effect" href="#!">Third Link With Waves</a></li>
             </ul>
+
             <a href="#" data-target="nav-mobile" className="sidenav-trigger"><i className="material-icons">menu</i></a>
           </div>
         </nav>
         <div className="section no-pad-bot" id="index-banner">
           <div className="container">
-            <h1 className="header center orange-text">Starter Template</h1>
+            <h1 className="header center orange-text">React Books</h1>
             <div className="row center">
-              <h5 className="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+              <h5 className="header col s12 light">Responsive demo using React and Material Design</h5>
             </div>
             <div className="row center">
-              <a href="http://materializecss.com/getting-started.html" id="download-button" className="btn-large waves-effect waves-light orange">Get Started</a>
+              <button id="download-button" className="btn-large waves-effect waves-light orange"
+                onClick={this.state.showFavs ? this.showBooks : this.showFavourites}>
+                {this.state.showFavs ? "Books Search" : "Favourites"}
+              </button>
             </div>
 
           </div>
@@ -88,7 +119,7 @@ export default class App extends React.Component<{}, AppState> {
             <div className="App">
               <Search onsearch={this.fetchBooks} />
               <div className="row">
-                <Books books={this.state.books} onAddFavourite={this.addToFavourite}
+                <Books books={this.state.showFavs ? this.state.favs : this.state.books} onAddFavourite={this.addToFavourite}
                   favs={this.state.favs} onRemoveFavourite={this.removeFromFavourite} >
                   <div>I'm a child in tag body</div>
                   String directly in the tag body
@@ -171,3 +202,10 @@ export default class App extends React.Component<{}, AppState> {
     );
   }
 }
+
+
+
+
+// Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+// var collapsibleElem = document.querySelector('.collapsible');
+// var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
