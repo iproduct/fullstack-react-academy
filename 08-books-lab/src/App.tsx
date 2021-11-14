@@ -7,7 +7,7 @@ import { InMemoryItemRepository, ItemRepository } from './repository';
 import { findAllByDisplayValue } from '@testing-library/dom';
 import M from "materialize-css"
 
-const BASE_URL = 'https://www.googleapis.com/books/v1/volumes?q='
+const BASE_URL = 'https://www.googleapis.com/books/v1/volumes?maxResults=12&q='
 export interface AppState {
   books: Item[];
   favs: Item[];
