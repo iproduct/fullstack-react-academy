@@ -23,8 +23,8 @@ const BookItem: React.FC<BookItemProps> = ({ book, inFavs, onAddFavourite, onRem
 
             <div className="BookItem-card-content">
                 <div className="BookItem-thumbnail-container">
-                    <img className="BookItem-thumbnail activator responsive-img" src={book.volumeInfo.imageLinks.thumbnail}
-                        alt="book thumbnail" />
+                    <img className="BookItem-thumbnail activator responsive-img" alt="book thumbnail"
+                        src={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : "images/book-cover-placeholder.png"} />
                 </div>
                 <span className="BookItem-card-title activator grey-text text-darken-4">
                     <i className="material-icons right">more_vert</i>
