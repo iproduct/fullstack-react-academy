@@ -38,7 +38,9 @@ export default class App extends React.Component<{}, AppState> {
   return (
     <div className="App">
       <Search onsearch={this.fetchBooks} />
-      <Books books={this.state.books} onFavourite={this.addRemoveFavourite} />
+      <Books books={this.state.books} onFavourite={this.addRemoveFavourite}>
+        <div>I'm a child in tag body</div>
+      </Books>
     </div>
   );
   }
