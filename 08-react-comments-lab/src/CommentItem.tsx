@@ -6,7 +6,7 @@ export interface CommentItemProps {
     comment: CommentModel
 }
 
-export const CommenItem: React.FC<CommentItemProps> = ({comment}) => {
+export const CommentItem: React.FC<CommentItemProps> = ({comment}) => {
     return (
         <div className="BookItem-card card col s12 m6 xl4">
             <div className="BookItem-card-content">
