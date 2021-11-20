@@ -52,7 +52,7 @@ const BookItem: React.FC<BookItemProps> = ({ book, inFavs, onAddFavourite, onRem
 
 BookItem.propTypes = {
     book: PropTypes.any.isRequired,
-    inFavs: PropTypes.any,
+    inFavs: PropTypes.bool.isRequired,
     onAddFavourite: PropTypes.func.isRequired,
     onRemoveFavourite: PropTypes.func.isRequired
 }
