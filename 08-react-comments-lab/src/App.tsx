@@ -1,7 +1,7 @@
 import './App.css';
+import M from "materialize-css"
 import React from 'react';
 import { CommentModel } from './comment.model';
-import M from "materialize-css"
 import { CommentsList } from './CommentsList';
 
 const BASE_URL = 'http://localhost:9000/api/comments'
@@ -39,8 +39,8 @@ export default class App extends React.Component<{}, AppState> {
         <nav className="light-blue lighten-1" role="navigation">
           <div className="nav-wrapper container"><a id="logo-container" href="#" className="brand-logo">Logo</a>
             <ul className="right hide-on-med-and-down">
-              <li><a href="#name" onClick={this.showBooks}>Books</a></li>
-              <li><a href="#name" onClick={this.showFavourites}>Favourites</a></li>
+              <li><a href="#name">Books</a></li>
+              <li><a href="#name">Favourites</a></li>
             </ul>
 
 

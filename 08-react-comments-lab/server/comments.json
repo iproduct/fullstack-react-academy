@@ -2,7 +2,7 @@
     {
         "id": 1388534400000,
         "title": "React",
-        "contnet": "React is easy ...",
+        "content": "React is easy ...",
         "status": 1,
         "created": 1388534400000,
         "modified": 1388534400000
@@ -10,7 +10,7 @@
     {
         "id": 1388534401000,
         "title": "React 2",
-        "contnet": "React functions are easy ...",
+        "content": "React functions are easy ...",
         "status": 1,
         "created": 1388534401000,
         "modified": 1388534401000
