@@ -41,8 +41,10 @@ const BookItem: React.FC<BookItemProps> = ({ book, inFavs, onAddFavourite, onRem
             </div>
             <div className="card-action">
                 {
-                    inFavs ? (<button className="btn waves-effect waves-light right" type="button" onClick={removeFav}>Remove from Favs</button>)
-                        : (<button className="btn waves-effect waves-light right" type="button" onClick={addFav}>Add to Favs</button>)
+                    inFavs && (<button className="btn waves-effect waves-light right" type="button" onClick={removeFav}>Remove from Favs</button>)
+                }
+                {
+                    !inFavs  && (<button className="btn waves-effect waves-light right" type="button" onClick={addFav}>Add to Favs</button>)
                 }
             </div>
         </div>

@@ -117,7 +117,9 @@ export default class App extends React.Component<{}, AppState> {
         <div className="container">
           <div className="section">
             <div className="App">
-              <Search onsearch={this.fetchBooks} />
+              {!this.state.showFavs && 
+                (<Search onsearch={this.fetchBooks} />) 
+              }
               <div className="row">
                 <Books books={this.state.showFavs ? this.state.favs : this.state.books} onAddFavourite={this.addToFavourite}
                   favs={this.state.favs} onRemoveFavourite={this.removeFromFavourite} >
