@@ -57,8 +57,11 @@ app.post('/api/comments', function(req, res) {
     // treat Date.now() as unique-enough for our purposes.
     var newComment = {
       id: Date.now(),
-      author: req.body.author,
-      text: req.body.text,
+      title: req.body.title,
+      content: req.body.content,
+      status: req.body.status,
+      created: Date.now(),
+      modified: Date.now()
     };
     comments.push(newComment);
     fs.writeFile(COMMENTS_FILE, JSON.stringify(comments, null, 4), function(err) {
@@ -92,6 +95,7 @@ app.put('/api/comments/:id', function(req, res) {
       res.status(404).json({code: 404, message: `Comment with ID=${commentId} not found.`});
       return;
     }
+    comments.modified = Date.now();
     comments[index] = comment;
     fs.writeFile(COMMENTS_FILE, JSON.stringify(comments, null, 4), function(err) {
       if (err) {
