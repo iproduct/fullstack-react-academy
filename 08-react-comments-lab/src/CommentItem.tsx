@@ -27,7 +27,7 @@ export const CommenItem: React.FC<CommentItemProps> = ({comment}) => {
                 <p>{comment.content}</p>
             </div>
             <div className="card-action">
-                <button className="btn waves-effect waves-light right" type="button" >Remove from Favs</button>)
+                <button className="btn waves-effect waves-light right" type="button" >Add to Favs</button>)
             </div>
         </div>
     )
