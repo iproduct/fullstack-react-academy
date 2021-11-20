@@ -18,6 +18,7 @@
     "web-vitals": "^1.0.1"
   },
   "devDependencies": {
+    "@types/materialize-css": "^1.0.11",
     "nodemon": "^2.0.15"
   },
   "scripts": {
