@@ -4,7 +4,7 @@ import React from 'react';
 import { CommentModel } from './comment.model';
 import { CommentsList } from './CommentsList';
 
-const BASE_URL = 'http://localhost:9000/api/comments'
+const BASE_URL = 'http://localhost:9000/comments'
 export interface AppState {
   comments: CommentModel[];
 }

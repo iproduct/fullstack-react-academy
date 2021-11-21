@@ -10,7 +10,7 @@ export interface CommentListProps {
 export const CommentsList: React.FC<CommentListProps> = ({comments}) => {
     return (
         <div>
-            {comments.map(comment => (<CommentItem comment={comment} />))}
+            {comments.map(comment => (<CommentItem key={comment.id} comment={comment} />))}
         </div>
     )
 }
