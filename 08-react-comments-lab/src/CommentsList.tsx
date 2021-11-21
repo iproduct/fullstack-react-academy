@@ -1,16 +1,18 @@
 
 import React from 'react'
 import { CommentModel } from './comment.model'
+import { CommentSubmitCallback } from './CommentInput'
 import { CommentItem } from './CommentItem'
 
 export interface CommentListProps {
-    comments: CommentModel[]
+    comments: CommentModel[],
+    onEdit: CommentSubmitCallback
 }
 
-export const CommentsList: React.FC<CommentListProps> = ({comments}) => {
+export const CommentsList: React.FC<CommentListProps> = ({comments, ...props}) => {
     return (
         <div>
-            {comments.map(comment => (<CommentItem key={comment.id} comment={comment} />))}
+            {comments.map(comment => (<CommentItem key={comment.id} {...props} comment={comment} />))}
         </div>
     )
 }

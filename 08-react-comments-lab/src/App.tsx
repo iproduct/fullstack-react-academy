@@ -3,15 +3,18 @@ import M from "materialize-css"
 import React from 'react';
 import { CommentModel } from './comment.model';
 import { CommentsList } from './CommentsList';
+import { CommentInput } from './CommentInput';
 
 const BASE_URL = 'http://localhost:9000/comments'
 export interface AppState {
   comments: CommentModel[];
+  editedComment: CommentModel;
 }
 
 export default class App extends React.Component<{}, AppState> {
   state: AppState = {
     comments: [],
+    editedComment: new CommentModel("", "")
   }
   constructor(props: {}) {
     super(props);
@@ -32,6 +35,26 @@ export default class App extends React.Component<{}, AppState> {
     this.setState({ comments: items })
   }
 
+
+  submitComment = (comment: CommentModel) => {
+    if (!this.state.editedComment.id) {
+      this.setState(state => ({
+        comments: [...state.comments, comment],
+        editedComment: new CommentModel("", "")
+      }))
+    } else {
+      this.setState(state => ({
+        comments: state.comments.map(c => c.id === comment.id? comment: c),
+        editedComment: new CommentModel("", "")
+      }))
+    }
+  }
+
+  editComment = (comment: CommentModel) => {
+    this.setState({
+      editedComment: comment
+    });
+  }
 
   render() {
     return (
@@ -72,7 +95,7 @@ export default class App extends React.Component<{}, AppState> {
             </div>
             <div className="row center">
               <button id="download-button" className="btn-large waves-effect waves-light orange">
-               "My Comments" 
+                "My Comments"
               </button>
             </div>
 
@@ -83,14 +106,15 @@ export default class App extends React.Component<{}, AppState> {
           <div className="section">
             <div className="App">
               <div className="row">
-                <CommentsList comments={this.state.comments} >
+                <CommentsList comments={this.state.comments} onEdit={this.editComment} >
                   <div>I'm a child in tag body</div>
                   String directly in the tag body
                   <p>I'm a second child in tag body</p>
                   <div>I'm a third child in tag body</div>
                   Second string directly in the tag body
                 </CommentsList>
-
+                <CommentInput key={this.state.editedComment.id ? this.state.editedComment.id : Date.now()}
+                  onSubmit={this.submitComment} editedComment={this.state.editedComment} />
               </div>
             </div>
 

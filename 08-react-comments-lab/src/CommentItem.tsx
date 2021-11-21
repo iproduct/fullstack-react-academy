@@ -1,13 +1,18 @@
 
 import React from 'react'
 import { CommentModel } from './comment.model'
+import { CommentSubmitCallback } from './CommentInput'
 import './CommentItem.css'
 
 export interface CommentItemProps {
-    comment: CommentModel
+    comment: CommentModel;
+    onEdit: CommentSubmitCallback
 }
 
-export const CommentItem: React.FC<CommentItemProps> = ({comment}) => {
+export const CommentItem: React.FC<CommentItemProps> = ({ comment, onEdit }) => {
+    function editComment() {
+        onEdit(comment)
+    }
     return (
         <div className="BookItem-card card col s12 m6 xl4">
             <div className="BookItem-card-content">
@@ -28,7 +33,9 @@ export const CommentItem: React.FC<CommentItemProps> = ({comment}) => {
                 <p>{comment.content}</p>
             </div>
             <div className="card-action">
-                <button className="btn waves-effect waves-light right" type="button" >Add to Favs</button>)
+                <button className="btn waves-effect waves-light right" type="button" onClick={editComment}>
+                    Edit Comment
+                </button>)
             </div>
         </div>
     )
