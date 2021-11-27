@@ -35,7 +35,7 @@ export const CommentItem: React.FC<CommentItemProps> = ({ comment, onEdit }) => 
             <div className="card-action">
                 <button className="btn waves-effect waves-light right" type="button" onClick={editComment}>
                     Edit Comment
-                </button>)
+                </button>
             </div>
         </div>
     )
