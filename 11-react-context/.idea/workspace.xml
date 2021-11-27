@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e7cb13f-4302-43d8-850c-5eb41e26d21e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../10-react-refs-labs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-react-refs-labs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="cf12a18c-44de-4059-b40b-dbed1db855de" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,10 +20,9 @@
     <allAvailableExecutables />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
-  <component name="ProjectId" id="1dhvFkJ1NLXSc1LjMHgrXmG2wvG" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1dnqGe0cnI9Vh9GnQ8cLhqnzZXE" />
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,7 +33,6 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -79,14 +74,14 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8e7cb13f-4302-43d8-850c-5eb41e26d21e" name="Default Changelist" comment="" />
-      <created>1592890037580</created>
+      <changelist id="cf12a18c-44de-4059-b40b-dbed1db855de" name="Default Changelist" comment="" />
+      <created>1593071110495</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1592890037580</updated>
-      <workItem from="1592890040015" duration="320000" />
-      <workItem from="1619451768120" duration="1061000" />
-      <workItem from="1637956483443" duration="1294000" />
+      <updated>1593071110495</updated>
+      <workItem from="1593071113129" duration="936000" />
+      <workItem from="1601975318340" duration="704000" />
+      <workItem from="1619452250228" duration="1142000" />
     </task>
     <servers />
   </component>

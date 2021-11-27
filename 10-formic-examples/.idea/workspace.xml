@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e7cb13f-4302-43d8-850c-5eb41e26d21e" name="Default Changelist" comment="">
+    <list default="true" id="6b9e2a43-5604-431b-a891-7978de96d8f2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../10-react-refs-labs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-react-refs-labs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-react-refs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-react-refs/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +25,7 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectId" id="1dhvFkJ1NLXSc1LjMHgrXmG2wvG" />
+  <component name="ProjectId" id="1dndPJEmi2NLzlJtUAc0hrVjNK3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
@@ -48,6 +48,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.23772103" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="ts.external.directory.path" value="D:\CourseNodeExpressReact\git\fullstack-react-academy\10-formic-examples\node_modules\typescript\lib" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
@@ -79,14 +80,14 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8e7cb13f-4302-43d8-850c-5eb41e26d21e" name="Default Changelist" comment="" />
-      <created>1592890037580</created>
+      <changelist id="6b9e2a43-5604-431b-a891-7978de96d8f2" name="Default Changelist" comment="" />
+      <created>1593064765842</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1592890037580</updated>
-      <workItem from="1592890040015" duration="320000" />
-      <workItem from="1619451768120" duration="1061000" />
-      <workItem from="1637956483443" duration="1294000" />
+      <updated>1593064765842</updated>
+      <workItem from="1593064767301" duration="621000" />
+      <workItem from="1637399642858" duration="1372000" />
+      <workItem from="1637957545668" duration="826000" />
     </task>
     <servers />
   </component>
