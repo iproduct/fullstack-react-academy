@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f94f6023-0121-4eb8-a791-131e6e21de99" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-react-refs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-react-refs/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-react-comments-lab/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../08-react-comments-lab/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-react-comments-lab/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../08-react-comments-lab/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-react-comments-lab/src/CommentItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../08-react-comments-lab/src/CommentItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-react-comments-lab/src/comment.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../08-react-comments-lab/src/comment.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-formik-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-formik-example/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-formic-examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-formic-examples/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +89,7 @@
       <updated>1601975252668</updated>
       <workItem from="1601975253847" duration="659000" />
       <workItem from="1619451766333" duration="981000" />
-      <workItem from="1637956519616" duration="2333000" />
+      <workItem from="1637956519616" duration="2499000" />
     </task>
     <servers />
   </component>

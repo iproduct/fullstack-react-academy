@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be37b9a1-585a-471d-80c1-0c4fe7853348" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../10-react-refs-labs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-react-refs-labs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-react-refs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-react-refs/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-react-comments-lab/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../08-react-comments-lab/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-react-comments-lab/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../08-react-comments-lab/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-react-comments-lab/src/CommentItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../08-react-comments-lab/src/CommentItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-react-comments-lab/src/comment.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../08-react-comments-lab/src/comment.model.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
