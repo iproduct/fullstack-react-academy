@@ -1,33 +1,38 @@
-import React, { Component, FormEvent } from "react";
+import {FormEvent, useEffect, useImperativeHandle, useRef, useState } from "react";
 
-interface Props {}
+interface Props { }
 
-interface State {}
 
-export const UncontrolledFormClass: React.FC<Props> = () => {
-    const nameRef = useRef(initialValue)<HTMLInputElement>();
-    ageRef = React.createRef<HTMLInputElement>();
-  
-    handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-      alert(`A name was submitted: ${this.nameRef.current?.value}, age: ${this.ageRef.current?.value}` );
-      event.preventDefault();
-    }
+export const UncontrolledFormFunction: React.FC<Props> = () => {
+  const [numSubmits, setNumSubmits] = useState<number>(0);
+  const nameRef = useRef<HTMLInputElement>(null);
+  const ageRef = useRef<HTMLInputElement>(null);  
+  const formRef = useRef<HTMLFormElement>(null);
 
-    handleFocuseName = () => {
-        this.nameRef.current?.focus()
-    }
-  
-    render() {
-      return (
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Name:
-            <input type="text" name="name" ref={this.nameRef} />
-            <input type="number" name="age" ref={this.ageRef} />
-          </label>
-          <input type="submit" value="Submit" />
-          <input type="button" value="Focuse Name" onClick={this.handleFocuseName}/>
-        </form>
-      );
-    }
+  useEffect(() => {
+    ageRef.current?.focus()
+  }, [])
+
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    setNumSubmits(numSubmits => numSubmits + 1)
+    alert(`A name was submitted: ${nameRef.current?.value}, age: ${ageRef.current?.value}, numSubmits: ${numSubmits}`);
+    event.preventDefault();
   }
+
+  const handleFocuseName = () => {
+    nameRef.current?.focus()
+  }
+
+  return (
+    <form onSubmit={handleSubmit} ref={formRef}>
+      <h4>Number of submits: {numSubmits}</h4>
+      <label>
+        Name:
+        <input type="text" name="name" ref={nameRef} />
+        <input type="number" name="age" ref={ageRef} />
+      </label>
+      <input type="submit" value="Submit" />
+      <input type="button" value="Focuse Name" onClick={handleFocuseName} />
+    </form>
+  );
+}

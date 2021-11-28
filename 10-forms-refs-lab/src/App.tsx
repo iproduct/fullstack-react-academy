@@ -1,12 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { UncontrolledFormClass } from './UncontrolledFormClass';
+import { FormikBasicForm } from './FormikBasicForm';
+import { UncontrolledFormFunction } from './UncontrolledFormFunction';
 
 function App() {
   return (
     <div className="App-container">
-      <UncontrolledFormClass />
+      <FormikBasicForm />
     </div>
   );
 }
