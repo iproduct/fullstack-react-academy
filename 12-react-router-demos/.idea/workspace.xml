@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9b0e54e-a8f3-40d9-972c-bf55a46baa5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../10-forms-refs-lab/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-forms-refs-lab/.idea/10-forms-refs-lab.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-forms-refs-lab/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-forms-refs-lab/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-forms-refs-lab/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-forms-refs-lab/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-forms-refs-lab/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-forms-refs-lab/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../11-react-context/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../14-myblogs-material-ui-jss/.idea/runConfigurations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-forms-refs-lab/src/FormikBasicForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../10-forms-refs-lab/src/FormikBasicForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../10-forms-refs-lab/src/MyForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../10-forms-refs-lab/src/MyForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-formik-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../09-formik-example/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-forms-refs-lab/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-forms-refs-lab/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-react-context/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-react-context/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

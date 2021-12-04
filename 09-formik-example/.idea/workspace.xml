@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be37b9a1-585a-471d-80c1-0c4fe7853348" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../08-react-comments-lab/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../08-react-comments-lab/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-react-comments-lab/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../08-react-comments-lab/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-react-comments-lab/src/CommentItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../08-react-comments-lab/src/CommentItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../08-react-comments-lab/src/comment.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../08-react-comments-lab/src/comment.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-forms-refs-lab/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10-forms-refs-lab/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../11-react-context/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../11-react-context/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-react-router-demos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../12-react-router-demos/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +86,7 @@
       <workItem from="1592976636347" duration="599000" />
       <workItem from="1637399520649" duration="717000" />
       <workItem from="1637957781896" duration="690000" />
+      <workItem from="1638615234038" duration="83000" />
     </task>
     <servers />
   </component>
