@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9b0e54e-a8f3-40d9-972c-bf55a46baa5e" name="Default Changelist" comment="" />
+    <list default="true" id="f9b0e54e-a8f3-40d9-972c-bf55a46baa5e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../10-forms-refs-lab/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-forms-refs-lab/.idea/10-forms-refs-lab.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-forms-refs-lab/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-forms-refs-lab/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-forms-refs-lab/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-forms-refs-lab/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-forms-refs-lab/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../10-forms-refs-lab/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11-react-context/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../14-myblogs-material-ui-jss/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-forms-refs-lab/src/FormikBasicForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../10-forms-refs-lab/src/FormikBasicForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-forms-refs-lab/src/MyForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../10-forms-refs-lab/src/MyForm.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
@@ -14,7 +33,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="KotlinMultiplatform">
-    <executables />
+    <allAvailableExecutables />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="1ZGtpRgrHcjpveHRjEhKgF9av0t" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -27,6 +49,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -82,6 +105,7 @@
       <workItem from="1584477441997" duration="4560000" />
       <workItem from="1593118945845" duration="741000" />
       <workItem from="1601975670721" duration="28000" />
+      <workItem from="1638604669892" duration="788000" />
     </task>
     <servers />
   </component>
