@@ -78,14 +78,15 @@ function Toolbar(props) {
 //   }
 // }
 
-export const ThemedButton = (props) => {
+export const ThemedButton = ({onClick, children}) => {
   // 3.3. DI using useContext()
   const theme = useContext(ThemeContext);
+  const user = useContext(UserContext);
   return (
     <button
-      {...props}
+      onClick={onClick}
       style={{ color: theme.foreground, backgroundColor: theme.background }}
-    />
+    >{children} for {user.name} </button>
   );
 };
 

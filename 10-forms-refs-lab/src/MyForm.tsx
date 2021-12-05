@@ -1,5 +1,6 @@
 import { Field, Form, FormikProps } from 'formik'
 import React from 'react'
+import { DisplayFormikState } from './DisplayFormikState';
 import { FormFields, validateEmail } from './FormikBasicForm'
 
 
@@ -19,7 +20,7 @@ export const MyForm:React.FC<FormikProps<FormFields>> = props => {
 
             <button type="submit">Submit</button>
             <button type="reset">Reset</button>
-            <pre>Touched: {JSON.stringify(touched)}</pre>
+            <DisplayFormikState />
         </Form>
 
     )
