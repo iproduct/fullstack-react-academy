@@ -29,6 +29,7 @@ function App() {
           <li><NavLink to="/" className={getActiveClass}>Home</NavLink></li>
           <li><NavLink to="/blogs" className={getActiveClass}>Blogs</NavLink></li>
           <li><NavLink to="/users" className={getActiveClass}>Users</NavLink></li>
+          <li><NavLink to="/invoices" className={getActiveClass}>Invoices</NavLink></li>
           <li><NavLink to="/about" className={getActiveClass}>About</NavLink></li>
         </ul>
       </nav>

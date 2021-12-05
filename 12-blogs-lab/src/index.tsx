@@ -8,6 +8,7 @@ import { Home } from './Home';
 import { Blogs } from './Blogs';
 import { About } from './About';
 import { Users } from './Users';
+import Invoices from './Invoices';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.render(
           <Route index element={<Home />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/users" element={<Users />} />
+          <Route path="/invoices" element={<Invoices />} />
           <Route path="/about" element={<About />} />
         </Route>
       </Routes>
