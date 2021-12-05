@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import { Home } from './Home';
 import { Blogs } from './Blogs';
 import { About } from './About';
 import { Users } from './Users';
 import Invoices from './Invoices';
+import { Invoice } from './Invoice';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -20,6 +21,16 @@ ReactDOM.render(
           <Route path="/users" element={<Users />} />
           <Route path="/invoices" element={<Invoices />} />
           <Route path="/about" element={<About />} />
+          <Route path="invoices" element={<Invoices />}>
+            <Route path=":invoiceId" element={<Invoice />} />
+          </Route>
+          <Route path="*" element={
+              <div style={{ padding: "1rem" }}>
+                <p>Page not found!</p>
+                <Link to="/">Go to home page</Link>
+              </div>
+            }
+          />
         </Route>
       </Routes>
     </BrowserRouter>

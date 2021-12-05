@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import { getActiveClass } from "./App";
 import { getInvoices } from "./data";
 import './Invoices.css'
@@ -6,7 +6,7 @@ import './Invoices.css'
 export default function Invoices() {
     let invoices = getInvoices();
     return (
-      <div className="Invoice" style={{ display: "flex" }}>
+      <div className="Invoice">
         <nav
           style={{
             borderRight: "solid 1px",
@@ -23,6 +23,9 @@ export default function Invoices() {
             </NavLink>
           ))}
         </nav>
+        <div className="invoice-container">
+          <Outlet />
+        </div>
       </div>
     );
   }

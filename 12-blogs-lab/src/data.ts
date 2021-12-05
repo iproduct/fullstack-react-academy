@@ -1,4 +1,11 @@
-let invoices = [
+export interface InvoiceData {
+    name: string;
+    number: number;
+    amount: string;
+    due: string;
+}
+
+let invoices: InvoiceData[] = [
     {
       name: "Santa Monica",
       number: 1995,
@@ -34,3 +41,7 @@ let invoices = [
   export function getInvoices() {
     return invoices;
   }
+
+  export function getInvoice(number: number) {
+    return getInvoices().find(i => i.number === number);
+}
