@@ -13,10 +13,10 @@ interface IsActiveProps {
   isActive: boolean;
 }
 
-// const getActiveStyle: (props: IsActiveProps) => CSSProperties =
-//   ({ isActive }) => isActive ? activeStyle : ({} as CSSProperties)
+export const getActiveStyle: (props: IsActiveProps) => CSSProperties =
+  ({ isActive }) => isActive ? activeStyle : ({} as CSSProperties)
 
-const getClasses: (props: IsActiveProps) => string = ({ isActive }) =>
+export const getActiveClass: (props: IsActiveProps) => string = ({ isActive }) =>
             isActive ? "active" : ""
         
 
@@ -26,10 +26,10 @@ function App() {
       <h2>React Blogs Demo</h2>
       <nav>
         <ul>
-          <li><NavLink to="/" className={getClasses}>Home</NavLink></li>
-          <li><NavLink to="/blogs" className={getClasses}>Blogs</NavLink></li>
-          <li><NavLink to="/users" className={getClasses}>Users</NavLink></li>
-          <li><NavLink to="/about" className={getClasses}>About</NavLink></li>
+          <li><NavLink to="/" className={getActiveClass}>Home</NavLink></li>
+          <li><NavLink to="/blogs" className={getActiveClass}>Blogs</NavLink></li>
+          <li><NavLink to="/users" className={getActiveClass}>Users</NavLink></li>
+          <li><NavLink to="/about" className={getActiveClass}>About</NavLink></li>
         </ul>
       </nav>
       <aside>
