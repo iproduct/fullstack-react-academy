@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9b0e54e-a8f3-40d9-972c-bf55a46baa5e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AppAuthenticationV6.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/AppImagesV6.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/AppLazyV6.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppRouterObjectV6.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -102,7 +107,7 @@
       <workItem from="1593118945845" duration="741000" />
       <workItem from="1601975670721" duration="28000" />
       <workItem from="1638604669892" duration="788000" />
-      <workItem from="1638701884746" duration="397000" />
+      <workItem from="1638701884746" duration="1179000" />
     </task>
     <servers />
   </component>

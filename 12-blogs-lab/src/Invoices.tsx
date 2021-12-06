@@ -16,7 +16,7 @@ export default function Invoices() {
           {invoices.map(invoice => (
             <NavLink
               className={getActiveClass}
-              to={`/invoices/${invoice.number}`}
+              to={`/invoices/user${invoice.number}/${invoice.number}`}
               key={invoice.number}
             >
               {invoice.name}

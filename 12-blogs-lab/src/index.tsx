@@ -22,7 +22,7 @@ ReactDOM.render(
           <Route path="/invoices" element={<Invoices />} />
           <Route path="/about" element={<About />} />
           <Route path="invoices" element={<Invoices />}>
-            <Route path=":invoiceId" element={<Invoice />} />
+            <Route path=":userId/:invoiceId" element={<Invoice />} />
           </Route>
           <Route path="*" element={
               <div style={{ padding: "1rem" }}>
