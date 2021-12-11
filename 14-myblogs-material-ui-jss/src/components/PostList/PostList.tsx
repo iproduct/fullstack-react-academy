@@ -33,7 +33,6 @@ interface Props {
 export function PostList({ posts, ...rest }: Props): ReactElement<Props> {
   return (
     <React.Fragment>
-      <Header />
       <Grid container spacing={2}>
         {posts.map(post => (<PostItem post={post} key={post.id} {...rest} />))}
       </Grid>

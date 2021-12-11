@@ -1,4 +1,5 @@
 import * as React from "react";
+import {Suspense} from "react";
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 
 const About = React.lazy(() => import("./pages/About"));
@@ -40,7 +41,7 @@ export default function App() {
           <Route
             path="about"
             element={
-              <React.Suspense fallback={<>...</>}>
+              <React.Suspense fallback={<>Loading...</>}>
                 <About />
               </React.Suspense>
             }
@@ -48,9 +49,9 @@ export default function App() {
           <Route
             path="dashboard/*"
             element={
-              <React.Suspense fallback={<>...</>}>
+              <Suspense fallback={<>Loading...</>}>
                 <Dashboard />
-              </React.Suspense>
+              </Suspense>
             }
           />
           <Route path="*" element={<NoMatch />} />
