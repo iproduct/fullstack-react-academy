@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0e8e32a-72c4-4c8d-bb32-d092d1580c22" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../14-myblogs-material-ui-jss/src/app/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../14-myblogs-material-ui-jss/src/app/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../16-blogs-api-express-mongo/routes/posts-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/../16-blogs-api-express-mongo/routes/posts-router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../16-blogs-api-express-mongo/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/../16-blogs-api-express-mongo/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../16-ts-express-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../16-ts-express-lab/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +21,9 @@
   </component>
   <component name="KotlinMultiplatform">
     <allAvailableExecutables />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -86,11 +88,23 @@
       <updated>1593579694693</updated>
       <workItem from="1593579696056" duration="605000" />
       <workItem from="1622459111663" duration="83000" />
-      <workItem from="1639295476041" duration="320000" />
+      <workItem from="1639295476041" duration="1339000" />
     </task>
+    <task id="LOCAL-00001" summary="demos updated">
+      <created>1639296209318</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1639296209318</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="demos updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="demos updated" />
   </component>
 </project>
