@@ -78,7 +78,7 @@ router.post('/', function(req, res) {
     });
 });
 
-router.put('/:id', verifyToken, verifyRole(['Admin']), async (req, res) => {
+router.put('/:id', async (req, res) => {  //verifyToken, verifyRole(['Admin']
     const old = await req.app.locals.db.collection('posts').findOne({ _id: new ObjectID(req.params.id) });
     if (!old) {
         sendErrorResponse(req, res, 404, `Post with ID=${req.params.id} does not exist`);

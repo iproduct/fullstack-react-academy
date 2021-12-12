@@ -24,7 +24,7 @@ const usersRouter = require('./routes/users-router');
 const authRouter = require('./routes/auth-router');
 const sendErrorResponse = require('./routes/utils').sendErrorResponse;
 const MongoClient = require('mongodb').MongoClient;
-const url = 'mongodb://localhost:27017';
+const url = 'mongodb://127.0.0.1:27017';
 const db_name = 'myblog9';
 
 const app = express();
