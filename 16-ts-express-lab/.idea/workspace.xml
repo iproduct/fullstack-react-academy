@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4751caa7-aa31-42b9-84cd-5dfe43c6f511" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../17-ts-express-mongo-lab/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../17-ts-express-mongo-lab/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../16-chat-server-socketio/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../16-chat-server-socketio/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../17-ts-express-mongo-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../17-ts-express-mongo-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../17-ts-mongo-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../17-ts-mongo-lab/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +93,7 @@
       <updated>1593518134536</updated>
       <workItem from="1593518135852" duration="1207000" />
       <workItem from="1639295474087" duration="2602000" />
+      <workItem from="1639813015188" duration="1243000" />
     </task>
     <servers />
   </component>

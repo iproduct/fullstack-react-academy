@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0e8e32a-72c4-4c8d-bb32-d092d1580c22" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../16-ts-express-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../16-ts-express-lab/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f0e8e32a-72c4-4c8d-bb32-d092d1580c22" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4751caa7-aa31-42b9-84cd-5dfe43c6f511" name="Default Changelist" comment="" />
+    <list default="true" id="4751caa7-aa31-42b9-84cd-5dfe43c6f511" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../17-ts-express-mongo-lab/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../17-ts-express-mongo-lab/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../16-chat-server-socketio/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../16-chat-server-socketio/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../16-ts-express-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../16-ts-express-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../17-ts-express-mongo-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../17-ts-express-mongo-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,8 +26,11 @@
   <component name="KotlinMultiplatform">
     <allAvailableExecutables />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="1e2SKzyHFIM1g5hQBqcsUHTjHpZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -34,6 +44,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.format.on.save.advertiser.fired" value="true" />
+    <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -84,6 +96,7 @@
       <updated>1593518134536</updated>
       <workItem from="1593518135852" duration="1207000" />
       <workItem from="1622458980247" duration="723000" />
+      <workItem from="1639813094450" duration="958000" />
     </task>
     <servers />
   </component>
