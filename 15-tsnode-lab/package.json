@@ -8,9 +8,9 @@
   "private": false,
   "main": "./dist/index.js",
   "scripts": {
-    "server": "node --inspect=5858 -r ts-node/register ./src/02_server.ts",
+    "server": "node --inspect=5858 -r ts-node/register ./src/05_server-express.ts",
     "tsc": "tsc -w",
-    "start": "nodemon -w ./dist ./dist/02_server.js localhost 9000",
+    "start": "nodemon",
     "build": "tsc"
   },
   "dependencies": {
@@ -25,5 +25,18 @@
     "livereload": "^0.9.3",
     "nodemon": "^2.0.15",
     "tslib": "^2.3.1"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "**/*.test.ts",
+      "**/*.spec.ts",
+      ".git",
+      "node_modules"
+    ],
+    "watch": [
+      "src"
+    ],
+    "exec": "yarn run server",
+    "ext": "ts"
   }
 }
