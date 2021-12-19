@@ -8,7 +8,7 @@
   "private": false,
   "main": "./dist/index.js",
   "scripts": {
-    "server": "node --inspect=5858 -r ts-node/register ./src/05_server-express.ts",
+    "server": "node --inspect=5858 -r ts-node/register ./src/06_server-json-file.ts",
     "tsc": "tsc -w",
     "start": "nodemon",
     "build": "tsc"

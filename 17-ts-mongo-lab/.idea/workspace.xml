@@ -5,6 +5,9 @@
       <change beforePath="$PROJECT_DIR$/../15-tsnode-lab/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../15-tsnode-lab/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../15-tsnode-lab/src/05_server-express.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../15-tsnode-lab/src/05_server-express.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../15-tsnode-lab/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../15-tsnode-lab/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../16-ts-express-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../16-ts-express-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../17-ts-express-mongo-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../17-ts-express-mongo-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +57,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.23772103" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.1.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="D:\Program Files\JetBrains\IntelliJ IDEA 2020.1.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
@@ -93,7 +96,7 @@
       <updated>1593518134536</updated>
       <workItem from="1593518135852" duration="1207000" />
       <workItem from="1622458980247" duration="723000" />
-      <workItem from="1639813094450" duration="1217000" />
+      <workItem from="1639813094450" duration="1826000" />
     </task>
     <servers />
   </component>

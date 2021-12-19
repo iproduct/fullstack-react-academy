@@ -1,0 +1,38 @@
+[
+    {
+        "title": "React Next 123",
+        "content": "`Best-selling author Adam Freeman explains how to get the most from React. He begins by describing the React architecture and the benefits it offers and then shows you how to use React and its associated tools and libraries in your projects, starting from the nuts and bolts and building up to the most advanced and sophisticated features, going in-depth to give you the knowledge you need.`",
+        "authorId": "1",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/411Forn86vL.jpg",
+        "keywords": [
+            "react",
+            "javascript",
+            "react16"
+        ],
+        "id": "95458188-67b3-4ac0-892d-d0155af06d8c"
+    },
+    {
+        "title": "Pro React 16",
+        "content": "`Best-selling author Adam Freeman explains how to get the most from React. He begins by describing the React architecture and the benefits it offers and then shows you how to use React and its associated tools and libraries in your projects, starting from the nuts and bolts and building up to the most advanced and sophisticated features, going in-depth to give you the knowledge you need.`",
+        "authorId": "1",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/411Forn86vL.jpg",
+        "keywords": [
+            "react",
+            "javascript",
+            "react16"
+        ],
+        "id": "53cffa57-fdda-4204-96cd-df3420650865"
+    },
+    {
+        "title": "Pro React 18",
+        "content": "`Best-selling author Adam Freeman explains how to get the most from React. He begins by describing the React architecture and the benefits it offers and then shows you how to use React and its associated tools and libraries in your projects, starting from the nuts and bolts and building up to the most advanced and sophisticated features, going in-depth to give you the knowledge you need.`",
+        "authorId": "1",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/411Forn86vL.jpg",
+        "keywords": [
+            "react",
+            "javascript",
+            "react16"
+        ],
+        "id": "95458188-67b3-4ac0-892d-d0155af06d8c"
+    }
+]

@@ -7,6 +7,7 @@ import MOCK_POSTS from './model/mock-posts';
 import { v4 as uuid4 } from 'uuid';
 import { Post, IdType } from './model/post';
 import { Http2Server } from 'http2';
+import * as path from 'path';
 
 const hostname: string = process.env.HOST || '127.0.0.1'
 const port = parseInt(process.env.PORT || '9000')
@@ -21,6 +22,30 @@ MOCK_POSTS.map(post => {
     post.id = uuid4();
     return post;
 }).forEach(post => app.locals.db.set(post.id, post))
+
+app.use("/", express.static(path.join(__dirname, "../public")))
+
+app.get("/users/:userId/comments/:fromId-:toId", (req: Request, res: Response) => {
+    res.json(req.params)
+})
+
+const requestTime = function (req, res, next) {
+    req.requestTime = Date.now()
+    next()
+}
+
+app.use("/pages", requestTime)
+
+app.get('/pages/page1', function (req, res) {
+    var responseText = 'Page1<br>'
+    responseText += '<small>Requested at: ' + req['requestTime'] + '</small>'
+    res.send(responseText)
+})
+app.get('/pages/page2', function (req, res) {
+    var responseText = 'Page2<br>'
+    responseText += '<small>Requested at: ' + req['requestTime'] + '</small>'
+    res.send(responseText)
+})
 
 app.get('/api/posts', (req: Request, res: Response) => {
     res.set('Content-Type', 'application/json')
