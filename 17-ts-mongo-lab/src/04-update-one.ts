@@ -31,11 +31,11 @@ async function main() {
         useUnifiedTopology: true
     });
     const db = con.db(dbName);
-    const postId = '5efd94a7fc08d180086f8302';
+    const postId = '61bf215dc9cd6e4c14392978';
     try {
         // update by _id
         var myquery = { _id: new ObjectID(postId) };
-        var newvalues = { $set: {title: "Learning React - Third Edition", categories: ['frontend']} };
+        var newvalues = { $set: {title: "MODIFIED: Learning React - Third Edition", categories: ['frontend']} };
         const updateRes = await db.collection(collection)
             .updateOne(myquery, newvalues)
         // console.log(updateRes);

@@ -20,7 +20,7 @@ import { MongoClient } from 'mongodb';
 import { Post, IPost } from './model/post.model';
 import MOCK_POSTS from './model/mock-posts';
 
-const dbUrl = 'mongodb://localhost: 27017/'
+const dbUrl = 'mongodb://localhost:27017/'
 const collection = 'posts';
 
 async function main() {

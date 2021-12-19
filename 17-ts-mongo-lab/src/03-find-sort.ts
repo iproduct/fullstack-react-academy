@@ -36,8 +36,8 @@ async function main() {
         // get all posts
         // const posts = await db.collection(collection)
         //     .find<Post>({title:/react/i})
-        //     .project({title: 1})
-        //     .sort({title: -1})
+        //     .project({title: 1, text: 1})
+        //     .sort({title: 1})
         //     // .skip(1)
         //     // .limit(3)
         //     .toArray();
@@ -47,8 +47,7 @@ async function main() {
                 [{ "$match": { "title": { $regex: /react/i } } },
                 {
                     $group: {
-                        _id: { title: '$title' },
-                        title: { $addToSet: '$title' },
+                        _id: '$title',
                         count: { "$sum": 1 }
                     }
                 }

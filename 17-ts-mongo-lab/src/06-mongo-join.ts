@@ -46,7 +46,7 @@ async function main() {
         ]).toArray();
 
         // print results
-        postsWithAuthor.forEach(post => console.log(post));
+        postsWithAuthor.forEach(post => console.log(JSON.stringify(post, null, 4)));
     } catch (err) {
         console.error(err);
     } finally {
