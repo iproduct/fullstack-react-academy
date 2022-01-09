@@ -1,3 +1,4 @@
+import { ClientToServerEvents, InterServerEvents, ServerToClientEvents, SocketData } from './socketio/iotypes';
 /**
  * THIS HEADER SHOULD BE KEPT INTACT IN ALL CODE DERIVATIVES AND MODIFICATIONS.
  * 
@@ -27,6 +28,7 @@ import postsRouter from './routes/posts-router';
 import usersRouter from './routes/users-router';
 import authRouter from './routes/auth-router';
 import * as cors from 'cors';
+import { Server } from 'socket.io'
 
 const POSTS_FILE = path.join(__dirname, '../posts.json');
 const DB_URL = 'mongodb://localhost: 27017/';
@@ -47,25 +49,28 @@ async function start() {
 
   app.set('port', PORT);
 
-  // app.use('/', express.static(path.join(__dirname, '../public')));
+  app.use('/', express.static(path.join(__dirname, '../public')));
+  app.get('/', function (req, res) {
+    res.sendFile(__dirname + 'public/index.html');
+  })
   app.use(express.json());
 
   // Additional middleware which will set headers that we need on each request.
   app.use(function (req, res, next) {
-  //   // Set permissive CORS header - this allows this server to be used only as
-  //   // an API server in conjunction with something like webpack-dev-server.
-  //   res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
-  //   res.setHeader('Access-Control-Allow-Headers', '*');
-  //   res.setHeader(`Access-Control-Allow-Methods`, `GET, POST, PUT, DELETE`);
-  //   res.setHeader('Access-Control-Max-Age', 3600); // 1 hour
+    //   // Set permissive CORS header - this allows this server to be used only as
+    //   // an API server in conjunction with something like webpack-dev-server.
+    //   res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+    //   res.setHeader('Access-Control-Allow-Headers', '*');
+    //   res.setHeader(`Access-Control-Allow-Methods`, `GET, POST, PUT, DELETE`);
+    //   res.setHeader('Access-Control-Max-Age', 3600); // 1 hour
     // Disable caching so we'll always get the latest posts.
     res.setHeader('Cache-Control', 'no-cache');
     next();
   });
-  
+
   app.use(cors({
     origin: 'http://localhost:3000',
-    methods: ['GET','HEAD','PUT','PATCH','POST','DELETE'],
+    methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
     preflightContinue: false,
     optionsSuccessStatus: 204
   }));
@@ -91,10 +96,21 @@ async function start() {
 
   app.locals.postDbFile = POSTS_FILE;
 
-  app.listen(app.get('port'), function () {
+  const server = app.listen(app.get('port'), function () {
     console.log('Server started: http://localhost:' + app.get('port') + '/');
   });
   app.on('close', cleanup);
+
+  // add SocketIO
+  const io = new Server<ClientToServerEvents, ServerToClientEvents, InterServerEvents, SocketData>(server, { transports: ['websocket', 'polling'] });
+  io.on('connection', function (socket) {
+    socket.join(`room1`);
+    console.log("Client connected: " + socket.id);
+    socket.on('chat_message', function (msg) {
+      console.log('Message received: ' + msg);
+      io.of("/").to("room1").emit('chat_message', msg);
+    })
+  })
 }
 
 start();

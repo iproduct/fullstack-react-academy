@@ -12,10 +12,11 @@ app.get('/', function(req, res) {
 })
 
 io.on('connection', function(socket) {
+    socket.join(`room1`);
     console.log("Client connected: " + socket.id);
     socket.on('chat message', function(msg) {
         console.log('Message received: ' + msg);
-        io.of("/").emit('chat message', msg);
+        io.of("/").to("room1").emit('chat message', msg);
     })
 })
 
