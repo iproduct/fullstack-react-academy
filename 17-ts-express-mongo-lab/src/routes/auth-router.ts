@@ -25,6 +25,7 @@ import * as jwt from 'jsonwebtoken';
 import { secret } from '../config/secret';
 import { Role } from '../model/user.model';
 import Credentials from '../model/auth';
+import { IUserRepository } from '../dao/repository';
 
 const router = Router();
 
@@ -35,14 +36,14 @@ router.post('/login', async (req, res, next) => {
     try {
         await indicative.validator.validate(credentials, {
             username: 'required',
-            password: 'required|string|min:6'
+            password: 'required|string|min:5'
         });
     } catch (err) {
         next(new AppError(400, err.message, err));
         return;
     }
     try {
-        const user = await (<UserRepository>req.app.locals.userRepo).findByUsername(credentials.username);
+        const user = await (<IUserRepository>req.app.locals.userRepo).findByUsername(credentials.username);
         if (!user) {
             next(new AppError(401, `Username or password is incorrect.`));
             return;
@@ -60,7 +61,6 @@ router.post('/login', async (req, res, next) => {
     } catch (err) {
         next(err);
     }
-
 });
 
 router.post('/register', async (req, res, next) => {

@@ -1,3 +1,4 @@
+import { IPost } from './../model/post.model';
 /**
  * THIS HEADER SHOULD BE KEPT INTACT IN ALL CODE DERIVATIVES AND MODIFICATIONS.
  * 
@@ -23,11 +24,12 @@ import * as indicative from 'indicative';
 import { verifyToken } from './verify-token';
 import { verifyRole } from './verify-role';
 import { Role } from '../model/user.model';
+import { IPostRepository } from '../dao/repository';
 
 const router = Router();
 
 router.get('/', (req, res, next) =>
-    (<PostRepository>req.app.locals.postRepo).findAll()
+    (<IPostRepository>req.app.locals.postRepo).findAll()
         .then(posts => res.json(posts))
         .catch(next));
 
@@ -44,7 +46,7 @@ router.get('/:id', async (req, res, next) => {
     }
     // find post
     try {
-        const found = await (<PostRepository>req.app.locals.postRepo).findById(req.params.id)
+        const found = await (<IPostRepository>req.app.locals.postRepo).findById(req.params.id)
         res.json(found); //200 OK with deleted post in the body
     } catch (err) {
         next(err);
@@ -52,20 +54,21 @@ router.get('/:id', async (req, res, next) => {
 
 });
 
-router.post('/', verifyToken, verifyRole([Role.AUTHOR, Role.ADMIN]), function (req, res, next) {
+router.post('/', verifyToken, verifyRole([Role.AUTHOR, Role.ADMIN]), async function (req, res, next) {
     // validate new post
-    const newPost = req.body;
-    indicative.validator.validate(newPost, {
-        _id: 'regex:^[0-9a-fA-F]{24}$',
-        title: 'required|string|min:3|max:30',
-        text: 'required|string|min:3|max:1024',
-        // authorId: 'required|regex:^[0-9a-fA-F]{24}$',s
-        imageUrl: 'url',
-        categories: 'array',
-        'categories.*': 'string',
-        keywords: 'array',
-        'keywords.*': 'string',
-    }).then(async () => {
+    const newPost = req.body as IPost;
+    try {
+        await indicative.validator.validate(newPost, {
+            _id: 'regex:^[0-9a-fA-F]{24}$',
+            title: 'required|string|min:3|max:30',
+            text: 'required|string|min:3|max:1024',
+            // authorId: 'required|regex:^[0-9a-fA-F]{24}$',s
+            imageUrl: 'url',
+            categories: 'array',
+            'categories.*': 'string',
+            keywords: 'array',
+            'keywords.*': 'string',
+        })
         // create post in db
         try {
 
@@ -74,13 +77,15 @@ router.post('/', verifyToken, verifyRole([Role.AUTHOR, Role.ADMIN]), function (r
             // newPost.authorId = defaultUser._id;
 
             // Create new User
-            const created = await(<PostRepository>req.app.locals.postRepo).add(newPost);
-
-            res.status(201).location(`/api/posts/${newPost.id}`).json(newPost);
+            const created = await (<IPostRepository>req.app.locals.postRepo).add(newPost);
+            res.status(201).location(`/api/posts/${newPost._id}`).json(newPost);
         } catch (err) {
             next(err);
+            return;
         }
-    }).catch(err => next(new AppError(400, err.message, err)));
+    } catch (err) {
+        next(new AppError(400, err.message, err));
+    }
 });
 
 router.put('/:id', async function (req, res, next) {

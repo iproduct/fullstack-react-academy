@@ -1,0 +1,13 @@
+POST http://localhost:9000/api/users HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Default",
+    "lastName": "Admin",
+    "username": "admin",
+    "email": "admin@maycompany.com",
+    "password": "admin",
+    "roles": [1,2]
+}
+
+###

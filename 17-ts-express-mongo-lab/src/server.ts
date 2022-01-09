@@ -26,6 +26,7 @@ import { User } from './model/user.model';
 import postsRouter from './routes/posts-router';
 import usersRouter from './routes/users-router';
 import authRouter from './routes/auth-router';
+import * as cors from 'cors';
 
 const POSTS_FILE = path.join(__dirname, '../posts.json');
 const DB_URL = 'mongodb://localhost: 27017/';
@@ -46,21 +47,28 @@ async function start() {
 
   app.set('port', PORT);
 
-  app.use('/', express.static(path.join(__dirname, '../public')));
+  // app.use('/', express.static(path.join(__dirname, '../public')));
   app.use(express.json());
 
   // Additional middleware which will set headers that we need on each request.
   app.use(function (req, res, next) {
-    // Set permissive CORS header - this allows this server to be used only as
-    // an API server in conjunction with something like webpack-dev-server.
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Headers', '*');
-    res.setHeader(`Access-Control-Allow-Methods`, `GET, POST, PUT, DELETE, OPTIONS`);
-    res.setHeader('Access-Control-Max-Age', 3600); // 1 hour
+  //   // Set permissive CORS header - this allows this server to be used only as
+  //   // an API server in conjunction with something like webpack-dev-server.
+  //   res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+  //   res.setHeader('Access-Control-Allow-Headers', '*');
+  //   res.setHeader(`Access-Control-Allow-Methods`, `GET, POST, PUT, DELETE`);
+  //   res.setHeader('Access-Control-Max-Age', 3600); // 1 hour
     // Disable caching so we'll always get the latest posts.
     res.setHeader('Cache-Control', 'no-cache');
     next();
   });
+  
+  app.use(cors({
+    origin: 'http://localhost:3000',
+    methods: ['GET','HEAD','PUT','PATCH','POST','DELETE'],
+    preflightContinue: false,
+    optionsSuccessStatus: 204
+  }));
 
   // attach feature routers
   app.use('/api/posts', postsRouter);

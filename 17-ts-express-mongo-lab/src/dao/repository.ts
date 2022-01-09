@@ -16,11 +16,12 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-import { Post } from '../model/post.model';
+import { IPost, Post } from '../model/post.model';
 import { Indentifiable, IdType } from '../model/shared-types';
 import { MongoClient } from 'mongodb';
+import { IUser, User } from '../model/user.model';
 
-export interface Repository<T extends Indentifiable> {
+export interface IRepository<T extends Indentifiable> {
     add(user: T): Promise<T>;
     edit(user: T): Promise<T>;
     deleteById(id: IdType): Promise<T>;
@@ -29,3 +30,9 @@ export interface Repository<T extends Indentifiable> {
     getCount(): Promise<number>;
 }
 
+export interface IUserRepository extends IRepository<IUser>{
+    findByUsername(username: string): Promise<User>
+ }
+export interface IPostRepository extends IRepository<IPost>{
+//    findByTags(tags: string[]): Promise<Post[]>
+}

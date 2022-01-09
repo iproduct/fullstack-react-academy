@@ -20,6 +20,7 @@ import { Request, Response, NextFunction } from 'express';
 import { UserRepository } from './../dao/mongo-repository';
 import { AppError } from '../model/errors';
 import { Role } from '../model/user.model';
+import { IUserRepository } from '../dao/repository';
 
 
 export function verifyRole(roles: Role[]) {
@@ -27,9 +28,10 @@ export function verifyRole(roles: Role[]) {
     const paramUserId = req.params.userId;
     const userId = req['userId'];
 
+    if (paramUserId && paramUserId != userId) next(new AppError(400, `Invalid user ID.`)); //Error
     if (!userId) next(new AppError(403, `No userId provided.`)); //Error
     try {
-      const user = await (<UserRepository>req.app.locals.userRepo).findById(userId)
+      const user = await (<IUserRepository>req.app.locals.userRepo).findById(userId)
       if (!user) {
         next(new AppError(404, `User not found.`)); //Error
         return;

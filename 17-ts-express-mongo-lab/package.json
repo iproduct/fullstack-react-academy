@@ -10,11 +10,12 @@
   "scripts": {
     "server": "node --inspect=5858 -r ts-node/register ./src/server.ts",
     "tsc": "tsc -w",
-    "start": "concurrently --kill-others \"nodemon\" \"livereload ./dist -d\"",
+    "start": "nodemon",
     "build": "tsc"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "indicative": "^7.4.4",
     "jsonwebtoken": "^8.5.1",

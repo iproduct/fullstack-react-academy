@@ -1,3 +1,4 @@
+import { IPostRepository, IUserRepository } from './repository';
 /**
  * THIS HEADER SHOULD BE KEPT INTACT IN ALL CODE DERIVATIVES AND MODIFICATIONS.
  * 
@@ -19,13 +20,14 @@
 import { Post } from '../model/post.model';
 import { Indentifiable, IdType, ResourceType } from '../model/shared-types';
 import { MongoClient, Db, ObjectID } from 'mongodb';
-import { Repository } from './repository';
+import { IRepository } from './repository';
 import { AppError } from '../model/errors';
 import { User } from '../model/user.model';
 
 
-export class MongoRepository<T extends Indentifiable> implements Repository<T> {
-    constructor(public entytyType: ResourceType<T>, public db: Db, public collection: string) { }
+export class MongoRepository<T extends Indentifiable> implements IRepository<T> {
+    constructor(public entytyType: ResourceType<T>, public db: Db, public collection: string) {    
+    }
 
     async add(entity: T) {
         entity._id = undefined;
@@ -86,10 +88,10 @@ export class MongoRepository<T extends Indentifiable> implements Repository<T> {
 }
 
 
-export class PostRepository extends MongoRepository<Post> {
+export class PostRepository extends MongoRepository<Post> implements IPostRepository {
 }
 
-export class UserRepository extends MongoRepository<User> {
+export class UserRepository extends MongoRepository<User> implements IUserRepository {
     async findByUsername(username: string): Promise<User> {
         try {
             return await this.db.collection(this.collection).findOne({'username': username});
