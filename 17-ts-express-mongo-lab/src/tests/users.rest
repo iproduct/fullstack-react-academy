@@ -4,7 +4,7 @@ content-type: application/json
 {
     "firstName": "Default",
     "lastName": "Admin",
-    "username": "admin",
+    "username": "admin2",
     "email": "admin@maycompany.com",
     "password": "admin",
     "roles": [1,2]
