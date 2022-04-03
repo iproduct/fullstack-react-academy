@@ -2,30 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1cab0a4-41bc-4d8f-9761-e5f668a6d505" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../01-html5-intro-lab/public/css/example01.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../01-html5-intro-lab/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-es-html5-intro-lab/victor-tsenov-50479-homework.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-html5-intro-lab/build/css/example01.css" beforeDir="false" afterPath="$PROJECT_DIR$/../01-html5-intro-lab/public/css/example01.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-html5-intro-lab/build/css/example01.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-html5-intro-lab/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../01-html5-intro-lab/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-html5-intro-lab/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../01-html5-intro-lab/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-html5-intro-lab/src/sass/example01.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../01-html5-intro-lab/src/sass/example01.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../16-blogs-api-express-mongo/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../16-blogs-api-express-mongo/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../16-blogs-api-express-mongo/routes/auth-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/../16-blogs-api-express-mongo/routes/auth-router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../16-blogs-api-express-mongo/routes/verify-role.js" beforeDir="false" afterPath="$PROJECT_DIR$/../16-blogs-api-express-mongo/routes/verify-role.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../16-blogs-api-express-mongo/routes/verify-token.js" beforeDir="false" afterPath="$PROJECT_DIR$/../16-blogs-api-express-mongo/routes/verify-token.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../16-blogs-api-express-mongo/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/../16-blogs-api-express-mongo/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../16-chat-server-socketio/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../16-chat-server-socketio/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../16-chat-server-socketio/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../17-nodejs-mongo/src/mongo-connect-insert-batch.js" beforeDir="false" afterPath="$PROJECT_DIR$/../17-nodejs-mongo/src/mongo-connect-insert-batch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../17-nodejs-mongo/src/mongo-connect-insert.js" beforeDir="false" afterPath="$PROJECT_DIR$/../17-nodejs-mongo/src/mongo-connect-insert.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../17-nodejs-mongo/src/mongo-delete-find.js" beforeDir="false" afterPath="$PROJECT_DIR$/../17-nodejs-mongo/src/mongo-delete-find.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../17-nodejs-mongo/src/mongo-delete-many.js" beforeDir="false" afterPath="$PROJECT_DIR$/../17-nodejs-mongo/src/mongo-delete-many.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../17-nodejs-mongo/src/mongo-find-one.js" beforeDir="false" afterPath="$PROJECT_DIR$/../17-nodejs-mongo/src/mongo-find-one.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../17-nodejs-mongo/src/mongo-find.js" beforeDir="false" afterPath="$PROJECT_DIR$/../17-nodejs-mongo/src/mongo-find.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../17-nodejs-mongo/src/mongo-insert-orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/../17-nodejs-mongo/src/mongo-insert-orders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../17-nodejs-mongo/src/mongo-join.js" beforeDir="false" afterPath="$PROJECT_DIR$/../17-nodejs-mongo/src/mongo-join.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../17-nodejs-mongo/src/mongo-update.js" beforeDir="false" afterPath="$PROJECT_DIR$/../17-nodejs-mongo/src/mongo-update.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-books-lab/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-react-comments-lab/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-react-comments-lab/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-react-comments-lab/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-react-comments-lab/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-html5-intro/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-blogs-react-client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../12-blogs-react-client/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-blogs-react-client/.idea/runConfigurations.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.format.on.save.advertiser.fired" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -106,6 +94,7 @@
       <updated>1601385761441</updated>
       <workItem from="1601385765144" duration="4578000" />
       <workItem from="1636181679635" duration="630000" />
+      <workItem from="1647093019746" duration="582000" />
     </task>
     <servers />
   </component>

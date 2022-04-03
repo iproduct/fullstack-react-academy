@@ -2,7 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4751caa7-aa31-42b9-84cd-5dfe43c6f511" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../08-books-lab/.idea/08-books-lab.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-books-lab/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-react-comments-lab/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-react-comments-lab/.idea/08-react-comments-lab.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-react-comments-lab/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-react-comments-lab/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-react-comments-lab/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-roter-lazy-loading-lab/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-roter-lazy-loading-lab/.idea/12-roter-lazy-loading-lab.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-roter-lazy-loading-lab/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-roter-lazy-loading-lab/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-roter-lazy-loading-lab/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-roter-lazy-loading-lab/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-roter-lazy-loading-lab/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-roter-lazy-loading-lab/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-roter-lazy-loading-lab/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-router-modal-lab/.idea/12-router-modal-lab.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-router-modal-lab/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-router-modal-lab/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-routing-auth-lab/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-routing-auth-lab/.idea/12-routing-auth-lab.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-routing-auth-lab/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-routing-auth-lab/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-routing-auth-lab/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-routing-auth-lab/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-routing-auth-lab/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-routing-auth-lab/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-routing-auth-lab/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-html5-intro/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-ts-comments-lab/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-ts-comments-lab/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-ts-comments-lab/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-ts-comments-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-ts-comments-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-blogs-react-client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../12-blogs-react-client/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-blogs-react-client/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-react-router-demos/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../12-react-router-demos/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-react-router-demos/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-react-router-demos/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../12-react-router-demos/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../16-blogs-api-express-mongo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../16-blogs-api-express-mongo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../16-chat-server-socketio/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../16-chat-server-socketio/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../16-chat-server-socketio/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../16-chat-server-socketio/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../17-ts-mongo-lab/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../17-ts-mongo-lab/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../17-ts-mongo-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../17-ts-mongo-lab/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +92,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.23772103" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
-    <property name="ts.external.directory.path" value="D:\Program Files\JetBrains\IntelliJ IDEA 2020.1.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="D:\CourseNodeExpressReact\git\fullstack-react-academy\17-ts-express-mongo-lab\node_modules\typescript\lib" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
@@ -89,6 +132,7 @@
       <workItem from="1593518135852" duration="1207000" />
       <workItem from="1639813080240" duration="1342000" />
       <workItem from="1641638391352" duration="826000" />
+      <workItem from="1648916985482" duration="1132000" />
     </task>
     <servers />
   </component>

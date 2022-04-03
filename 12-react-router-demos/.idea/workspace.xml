@@ -2,11 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9b0e54e-a8f3-40d9-972c-bf55a46baa5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AppAuthenticationV6.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppImagesV6.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppLazyV6.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppRouterObjectV6.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-books-lab/.idea/08-books-lab.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-books-lab/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-react-comments-lab/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-react-comments-lab/.idea/08-react-comments-lab.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-react-comments-lab/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-react-comments-lab/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../08-react-comments-lab/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-roter-lazy-loading-lab/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-roter-lazy-loading-lab/.idea/12-roter-lazy-loading-lab.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-roter-lazy-loading-lab/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-roter-lazy-loading-lab/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-roter-lazy-loading-lab/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-roter-lazy-loading-lab/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-roter-lazy-loading-lab/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-roter-lazy-loading-lab/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-roter-lazy-loading-lab/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-router-modal-lab/.idea/12-router-modal-lab.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-router-modal-lab/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-router-modal-lab/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-routing-auth-lab/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-routing-auth-lab/.idea/12-routing-auth-lab.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-routing-auth-lab/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-routing-auth-lab/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-routing-auth-lab/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-routing-auth-lab/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-routing-auth-lab/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-routing-auth-lab/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12-routing-auth-lab/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-html5-intro/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-ts-comments-lab/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-ts-comments-lab/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-ts-comments-lab/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-ts-comments-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-ts-comments-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-blogs-react-client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../12-blogs-react-client/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../12-blogs-react-client/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +79,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.format.on.save.advertiser.fired" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
@@ -108,6 +140,7 @@
       <workItem from="1601975670721" duration="28000" />
       <workItem from="1638604669892" duration="788000" />
       <workItem from="1638701884746" duration="1179000" />
+      <workItem from="1648305229823" duration="678000" />
     </task>
     <servers />
   </component>
